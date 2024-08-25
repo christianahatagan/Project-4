@@ -1,0 +1,33 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+@import '../utilities/variables';
+@import '../utilities/mixin';
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $color-white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    @include mq ('md') {
+        padding: 10px 30px;
+
+        &+.btn {
+            margin-left: 10px;
+        }
+    }
+}
+  
+@each $name, $color in $button-colors {
+    .#{$name} {
+        background-color: #{$color};
+
+        &:hover {
+            background-color: lighten($color, 15%);
+        }
+    }
+  }

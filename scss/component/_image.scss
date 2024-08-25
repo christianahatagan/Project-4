@@ -1,0 +1,29 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+//* New Code *//
+.img{
+
+    &-avatar{
+        max-height: 100%;
+    }
+
+    &-frame{
+        padding: 13px;
+        border: 1px solid $color-frame;
+    }
+
+    &-frame, 
+    &-avatar{
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    &-avatar,
+    &-frame,
+    &-logo {
+        @include align-center;
+    }
+}
+

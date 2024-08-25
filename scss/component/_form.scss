@@ -1,0 +1,41 @@
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+@import '../utilities/variables';
+
+* {
+  font-family: 'Lato', sans-serif;
+  color: #777;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form {
+    flex-basis: 100%;
+  }
+  
+.input{
+    display: block;
+    width: 94%;
+    margin: 10px auto 0;
+    border: none;
+    padding: 10px;
+    border-bottom: 5px solid $color-primary;
+}
+  
+.hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+  

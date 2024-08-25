@@ -1,0 +1,32 @@
+/* ============================================= */
+/*                   Mixins                      */
+/* ============================================= */
+
+//* Align center for images *//
+@mixin align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;;
+}
+
+//* Return media queries *//
+@mixin mq($bk-pt) {
+    $val: map-get($breakpoint, $bk-pt);
+    $md: map-get($breakpoint, 'md');
+
+    @if $val ==null {
+        @error "#{$bk-pt} is not a valid breakpoint";
+    }
+
+    @else if $val < $md {
+        @media only screen and (max-width : $val) {
+            @content;
+        }
+    }
+
+    @else {
+        @media only screen and (min-width : $val) {
+            @content;
+        }
+    }
+}
