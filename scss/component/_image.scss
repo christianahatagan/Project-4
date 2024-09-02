@@ -1,29 +1,28 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
-
+@import '../utilities/mixin';
 //* New Code *//
-.img{
-
-    &-avatar{
-        max-height: 100%;
-    }
-
-    &-frame{
-        padding: 13px;
-        border: 1px solid $color-frame;
-    }
-
-    &-frame, 
-    &-avatar{
-        margin-top: 10px;
-        max-width: 100%;
-    }
+.img {
 
     &-avatar,
     &-frame,
     &-logo {
         @include align-center;
     }
-}
 
+    &-avatar,
+    &-frame {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    &-avatar {
+        max-height: 100%;
+    }
+
+    &-frame {
+        padding: 13px;
+        border: 1px solid $color-gray-light;
+    }
+}

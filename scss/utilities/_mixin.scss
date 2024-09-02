@@ -4,29 +4,26 @@
 
 //* Align center for images *//
 @mixin align-center {
+    @content;
     display: block;
     margin-left: auto;
     margin-right: auto;;
 }
 
 //* Return media queries *//
-@mixin mq($bk-pt) {
+@mixin media-querie($bk-pt) {
     $val: map-get($breakpoint, $bk-pt);
     $md: map-get($breakpoint, 'md');
 
     @if $val ==null {
-        @error "#{$bk-pt} is not a valid breakpoint";
+        @error "#{$bk-pt} breakoint is not proper";
     }
 
     @else if $val < $md {
-        @media only screen and (max-width : $val) {
-            @content;
-        }
+        @media only screen and (max-width : $val) {@content;}
     }
 
     @else {
-        @media only screen and (min-width : $val) {
-            @content;
-        }
+        @media only screen and (min-width : $val) { @content;}
     }
 }
