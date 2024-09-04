@@ -54,3 +54,7 @@
 .card {
     flex-basis: 100%;
 }
+
+@include media-querie ('md') {
+    @include generate-columns();
+}

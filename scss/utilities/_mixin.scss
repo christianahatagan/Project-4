@@ -27,3 +27,12 @@
         @media only screen and (min-width : $val) { @content;}
     }
 }
+
+//*Generate the column flex-basis *//
+@mixin generate-columns($columns: 12) {
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+        flex-basis: (100% / $columns) * $i;
+      }
+    }
+  }
