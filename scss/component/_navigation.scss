@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
 
-  @include media-querie ('md') {
+  @include media-querie('md') {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -27,7 +27,7 @@
     background-color .2s ease-in-out, 
     color .2s ease-in-out;
 
-  @include media-querie ('md') {
+  @include media-querie('md') {
       flex-basis: 100px;
   }
 }

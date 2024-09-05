@@ -32,7 +32,7 @@
 @mixin generate-columns($columns: 12) {
     @for $i from 1 through $columns {
       .col-#{$i} {
-        flex-basis: (100% / $columns) * $i;
+        flex-basis:calc(100% / $columns) * $i;
       }
     }
   }

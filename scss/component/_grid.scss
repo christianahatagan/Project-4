@@ -33,7 +33,7 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
-    @include media-querie('md') {
+    @include media-querie('md'){
         display: flex;
         justify-content: center;
         margin-top: 0;
@@ -55,6 +55,6 @@
     flex-basis: 100%;
 }
 
-@include media-querie ('md') {
+@include media-querie('md') {
     @include generate-columns();
 }

@@ -27,7 +27,7 @@ a {
     text-transform: uppercase;
     border-radius: 5px;
 
-    @include media-querie ('md') {
+    @include media-querie('md') {
         padding: 10px 30px;
 
         &+.btn {
