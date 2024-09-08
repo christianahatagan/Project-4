@@ -308,6 +308,64 @@ template {
 }
 
 /* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+/* ============================================= */
+/*              Color Variables                  */
+/* ============================================= */
+/* Primary Colors */
+/* Primary brand color */
+/* Secondary text color */
+/* Accent Colors */
+/* Link color */
+/* Blockquote border color */
+/* Image Color */
+/* Button Colors */
+/* Default button color */
+/* Success button color */
+/* Error button color */
+/* Warning button color */
+/* Info button color */
+/* List of color colors */
+/* Theme Colors (used in grid system) */
+/* .theme.col-1 */
+/* .theme.col-2 */
+/* .theme.col-3 */
+/* .theme.col-4 */
+/* .theme.col-5 */
+/* .theme.col-6 */
+/* .theme.col-7 */
+/* .theme.col-8 */
+/* .theme.col-9 */
+/* .theme.col-10 */
+/* .theme.col-11 */
+/* .theme.col-12 */
+/* List of theme colors */
+/* Media Query Break Points  */
+/* ============================================= */
+/*                   Mixins                      */
+/* ============================================= */
+* {
+  font-family: "Lato", sans-serif;
+  color: #777;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+/* ============================================= */
 /*              Typography                       */
 /* ============================================= */
 /* ============================================= */

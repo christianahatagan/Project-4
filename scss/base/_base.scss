@@ -1,7 +1,8 @@
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
-
+@import '../utilities/variables';
+@import '../utilities/mixin';
 * {
     font-family: 'Lato', sans-serif;
     color: $color-secondary;
