@@ -6,6 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -13,7 +15,6 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-/* line 23, ../../treehouse project/Project-4/scss/base/_normalize.scss */
 body {
   margin: 0;
 }
@@ -554,6 +555,43 @@ a {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+/* ============================================= */
+/*                   Mixins                      */
+/* ============================================= */
+.img-avatar, .img-frame, .img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-avatar, .img-frame {
+  margin-top: 10px;
+  max-width: 100%;
+}
+.img-avatar {
+  max-height: 100%;
+}
+.img-frame {
+  padding: 13px;
+  border: 1px solid #777;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  color: #777;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ============================================= */
